@@ -1,0 +1,59 @@
+{
+  "name": "mylegacycli",
+  "description": "A cli tool to decrypt MyLegacy exported data",
+  "version": "0.0.1",
+  "author": "QQSun @untsop",
+  "bin": {
+    "mylegacy": "./bin/run"
+  },
+  "bugs": "https://github.com/untsop/mylegacycli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "bitcore-lib": "^8.24.1",
+    "bitcore-mnemonic": "^8.24.1",
+    "crypto-js": "^4.0.0",
+    "elliptic": "^6.5.3",
+    "scrypt-async": "^2.0.1",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "nyc": "^14",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/untsop/mylegacycli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "mylegacy"
+  },
+  "repository": "untsop/mylegacycli",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
