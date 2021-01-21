@@ -1,32 +1,21 @@
-mylegacycli
+我的遗产 CLI 工具
 ===========
 
 A cli tool to decrypt MyLegacy exported data
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/mylegacycli.svg)](https://npmjs.org/package/mylegacycli)
-[![Downloads/week](https://img.shields.io/npm/dw/mylegacycli.svg)](https://npmjs.org/package/mylegacycli)
-[![License](https://img.shields.io/npm/l/mylegacycli.svg)](https://github.com/untsop/mylegacycli/blob/master/package.json)
+# 安装
 
-<!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
-# Usage
-<!-- usage -->
+克隆本项目，在项目文件夹执行：
+
 ```sh-session
-$ npm install -g mylegacycli
-$ mylegacy COMMAND
-running command...
-$ mylegacy (-v|--version|version)
-mylegacycli/0.0.0 darwin-x64 node-v12.18.4
-$ mylegacy --help [COMMAND]
-USAGE
-  $ mylegacy COMMAND
+$ yarn
+```
+
+# 使用方式
+<!-- usage -->
+
+克隆本项目，在项目文件夹执行：
+```sh-session
+$ ./bin/run --file /path/to/exported/file.json -m 准确无误而且完整的助记词
 ...
 ```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
-
-<!-- commandsstop -->
